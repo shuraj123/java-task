@@ -1,0 +1,49 @@
+package basic;
+	import java.util.*;
+	 
+	public class matrix1
+	{
+		public static void main(String[] args)
+		{
+			Scanner sc = new Scanner(System.in);
+					
+			System.out.println("Enter the first matrix");
+			int m11 = sc.nextInt();
+			int m12 = sc.nextInt();
+			int m13 = sc.nextInt();
+			int m21 = sc.nextInt();
+			int m22 = sc.nextInt();
+			int m23 = sc.nextInt();
+			int m31 = sc.nextInt();
+			int m32 = sc.nextInt();
+			int m33 = sc.nextInt();
+			
+			System.out.println("Enter the second matrix");
+			int n11 = sc.nextInt();
+			int n12 = sc.nextInt();
+			int n13 = sc.nextInt();
+			int n21 = sc.nextInt();
+			int n22 = sc.nextInt();
+			int n23 = sc.nextInt();
+			int n31 = sc.nextInt();
+			int n32 = sc.nextInt();
+			int n33 = sc.nextInt();
+			
+			sc.close();
+			
+			
+			int a [][] = {{m11,m12,m13},{m21,m22,m23},{m31,m32,m33}};
+			int b [][] = {{n11,n12,n13},{n21,n22,n23},{n31,n32,n33}};
+			
+			int c[][] = new int[3][3];
+			for(int i=0; i<3; i++)
+			{
+				for(int j=0; j<3; j++)
+				{
+					c[i][j] = a[i][j] + b[i][j];
+					System.out.print(c[i][j]+" ");
+				}
+				System.out.println();
+			}
+		}
+}
